@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Red Hat Display";
+    font-size: 16px;
+    background: url(./images/pattern-background-desktop.svg);
+}
+
+.card {
+    width: 450px;
+    height: 650px;
+
+    background-color: hsl(225, 100%, 98%); 
+    border-radius: 20px;
+
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+#hero {
+    position: relative;
+    bottom: 40px;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+h1, .plan-type {
+    color: hsl(223, 47%, 23%); 
+}
+
+h1 {
+    padding-bottom: 20px;
+}
+
+header p, .price, .order {
+    color: hsl(224, 23%, 55%); 
+}
+
+.plan-info {
+    background-color: hsl(225, 100%, 97%);
+    width: 340px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 120px;
+}
+
+.plan-info img{
+    position: relative;
+    left: 7px;
+    top: 25px;
+}
+
+.plan-type, .payment p, .order p  {
+    font-weight: bold;
+}
+
+.plan-type, .price {
+    float: right;
+}
+
+.plan-type {
+    gap: 2px;
+    margin-top: 25px; 
+}
+
+.price {
+    font-weight: 400;
+    margin-bottom: 25px; 
+}
+
+.change p {
+    color: hsl(245, 75%, 52%); 
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.change p:hover {
+    text-decoration: none;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.payment {
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+
+    box-shadow: 2px 15px hsl(225, 100%, 94%);
+
+    text-align: center;
+
+    padding: 10px 91px 10px 91px;
+    border-radius: 10px;
+}
+
+.payment:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.order p:hover {
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        background: url(./images/pattern-background-mobile.svg);
+    }
+}
